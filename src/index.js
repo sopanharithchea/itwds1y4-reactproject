@@ -7,13 +7,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Landing from "views/Landing.js";
 import Profile from "views/Profile.js";
 import Login from "views/Login.js";
+import Dashboard from "views/Dashboard.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={Landing} />
+      <Route exact path="/" component={Landing} />
       <Route path="/profile" component={Profile} />
-      <Route path="/Login" component={Login} />
+      <Route path="/login" component={Login} />
+      <Route path="/dashboard" component={Dashboard} />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
